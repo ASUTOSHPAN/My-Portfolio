@@ -4,64 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Nav Section -->
     <nav>
         <h1>Asutosh Panda</h1>
-        <div class="all">
-            <a class="about" href="#">About</a>
-            <a class="exp" href="#">Experience</a>
-            <a class="pro" href="#">Projects</a>
-            <a class="con" href="#">Contact</a>
+        <div id="anchor">
+            <a href="#ph1">About</a>
+            <a href="#skills">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#footer">Contact</a>
         </div>
     </nav>
+    <!-- Header Section -->
     <header>
-        <div id="img-1">
-            <img src="My-Pic.jpg" alt="My-Pic">
-        </div>
-        <div id="name">
-            <h5>Hello, I'm</h5>
+        <img src="My-Pic.jpg" alt="My-Pic">
+        <div id="profile">
+            <p>Hello, I'm</p>
             <h1>Asutosh Panda</h1>
-            <h4>Web Developer | Software Developer</h4>
-            <div id="btn-1">
-                <button>Download CV</button>
-                <a href="#">Contact Info</a>
-            </div>
-            <div id="logo">
-                <img src="linkdin-icon.svg" alt="Link-din">
-                <img src="Github-icon.svg" alt="Git-hub">
-            </div>
+            <h2>Web Developer | Software Developer</h2>
+            <button>Download CV</button>
+            <a href="#">Contact Info</a>
         </div>
     </header>
+    <!-- About-Me Section -->
     <section>
-        <div id="about">
+        <div id="ph1">
             <p>Get To Know More</p>
             <h1>About Me</h1>
         </div>
-    </section>
-
-    <div class="container">
-        <div class="image">
-            <img src="My-Pic.jpg" alt="My-Pic" height="400px" width="330px">
-            <div class="exp-edu">
+        <div id="me">
+            <img src="My-Pic.jpg" alt="My-Pic">
+            <div id="sub-exp">
                 <div id="exp-edu">
-                    <div class="experience">
-                        <img src="Experience-icon.svg" alt="Experience-icon" height="40px">
-                        <h3>Experience</h3>
+                    <div id="Experience">
+                        <i class="fa-solid fa-file"></i>
+                        <h2>Experience</h2>
                         <p>Fresher</p>
                         <p>Web Developer | Software Developer</p>
                     </div>
-                    <div class="education">
-                        <img src="education-icon.svg" alt="edu-icon" height="40px">
-                        <h3>Education</h3>
-                        <p>Bachelor of Technology</p>
+                    <div id="Education">
+                        <i class="fa-solid fa-file"></i>
+                        <h2>Education</h2>
                         <p>Intermediate in Science</p>
+                        <p>Bachelor of Technology in Computer Science</p>
                     </div>
                 </div>
-                <p>Hello, I am Asutosh Panda, I am a fresher web & Software Developer graduated with Bachelor of
+                <p id="para">Hello, I am Asutosh Panda, I am a fresher web & Software Developer graduated with Bachelor of
                     Technology in Computer Science Engineering.
                     I have experience in software technologies like HTML, CSS, JavaScript, React JS, Tailwind CSS. I
                     have completed an Internship in Web Development Web Bocket Software PVT.LTD. I am passionate about
@@ -70,62 +62,84 @@
                 </p>
             </div>
         </div>
-    </div>
-    <!-- Experience / Slills  -->
-    <div class="skills">
-        <div id="explore">
+    </section>
+    <!-- Experience/Skill Section -->
+    <section id="skills">
+        <div id="ph1">
             <p>Explore My</p>
             <h1>Experience / Skills</h1>
         </div>
-        <div class="front-back">
-            <div class="frontend">
+        <div id="front-back">
+            <div id="frontend">
                 <h1>Frontend Development</h1>
-                <h3>HTML</h3>
-                <p>Experienced</p>
-                <h3>CSS</h3>
-                <p>Experienced</p>
-                <h3>JavaScript</h3>
-                <p>Experienced</p>
-                <h3>Bootstrap</h3>
-                <p>Intermediate</p>
-                <h3>Tailwind CSS</h3>
-                <p>Experienced</p>
-                <h3>React JS</h3>
-                <p>Experienced</p>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Experience</dd>
+                    <dt>CSS</dt>
+                    <dd>Experience</dd>
+                    <dt>JavaScript</dt>
+                    <dd>Intermediate</dd>
+                    <dt>React JS /Next JS</dt>
+                    <dd>Intermediate</dd>
+                    <dt>Bootstrap</dt>
+                    <dd>Intermediate</dd>
+                    <dt>Tailwind CSS</dt>
+                    <dd>Intermediate</dd>
+                </dl>
             </div>
-            <div class="backend">
+            <div id="backend">
                 <h1>Backend Development</h1>
-                <h3>Node JS</h3>
-                <p>Intermediate</p>
-                <h3>Express Js</h3>
-                <p>Intermediate</p>
-                <h3>Mongo DB</h3>
-                <p>Intermediate</p>
-                <h3>Git & Github</h3>
-                <p>Experienced</p>
+                <dl>
+                    <dt>Node JS</dt>
+                    <dd>Intermediate</dd>
+                    <dt>Express JS</dt>
+                    <dd>Intermediate</dd>
+                    <dt>Mongo DB</dt>
+                    <dd>Intermediate</dd>
+                    <dt>Git & Github</dt>
+                    <dd>Intermediate</dd>
+
+                </dl>
             </div>
         </div>
-        <div class="contact">
-            <p style="color: rgb(81, 81, 81); font-size: large;">Get in Touch</p>
+    </section>
+    <!-- ***Projects Section*** -->
+    <section id="projects">
+        <div id="ph1">
+            <p>Browse My Recent</p>
+            <h1>Projects</h1>
+        </div>
+        <div id="ScreenShot">
+            <img class="one" src="Amazon.project.ScreenShot.png" alt="AmazonClone">
+            <img class="one" src="NikeClone.SS.png" alt="NikeClone">
+            <img class="one" src="Form.SS.png" alt="LoginForm">
+            <video class="one" src="Form-2.ss.mp4" controls autoplay></video>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div id="ph1">
+            <p>Get in Touch</p>
             <h1>Contact Me</h1>
-            <div class="mail-git">
-                <div id="mail">
-                    <img src="mail-icon.svg" alt="Mail-icon" height="40px">
-                    <a href="mailto:asutoshpanda268@gmail.com">asutoshpanda@gmail.com</a>
-                </div>
-                <div id="git">
-                    <img src="Github-icon.svg" alt="Github-icon" height="40px">
-                    <a href="https://github.com/">Asutosh Panda</a>
-                </div>
+        </div>
+        <div id="mail-git">
+            <div id="mail">
+                <img src="mail-icon.svg" alt="mail-icon">
+                <a href="asutoshpanda268@gamiil.com">asutoshpanda268@gmail.com</a>
+            </div>
+            <div id="git">
+                <img src="Github-icon.svg" alt="Github-icon">
+                <a href="#">Asutosh Panda</a>
             </div>
         </div>
-        <footer>
-            <a class="about" href="#">About</a>
-            <a class="exp" href="#">Experience</a>
-            <a class="pro" href="#">Projects</a>
-            <a class="con" href="#">Contact</a>
-            <div class="copy">Copyright © 2025 Asutosh Panda. All Rights Reserved.</div>
-        </footer>
+        <div id="AEPC">
+            <a href="#ph1">About</a>
+            <a href="#skills">Experience</a>
+            <a href="#projects">projects</a>
+            <a href="#footer">Contact</a>
+        </div>
+        <p>Copyright © 2025 Asutosh Panda. All Rights Reserved.</p>
+    </footer>
 </body>
 
 </html>

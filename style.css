@@ -1,272 +1,416 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   background-color: rgb(224, 241, 255);
 }
+
+/* Nav Section */
 nav {
-    height: 50px;
-    margin: 40px 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 26px;
+   height: 50px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 50px;
 }
+
 nav h1 {
-    font-weight: 400;
-    font-size: 34px;
+   font-size: 32px;
+   font-weight: 400;
 }
-.all a {
-    text-decoration: none;
-    color: black;
-    padding: 20px;
+
+#anchor a {
+   margin-left: 20px;
+   text-decoration: none;
+   color: black;
+   font-size: 24px;
 }
+
+/* Header Section */
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 25px;
+   gap: 50px;
 }
-#img-1 img {
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    margin: 80px 40px;
-}
-#name {
-    gap: 40px;
-}
-#name h5 {
-    color: rgb(81, 81, 81);
-    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-}
-#name h4 {
-    font-size: 28px;
-    text-align: center;
-    color: rgb(81, 81, 81);
-}
-#name h1 {
-    font-size: 48px;
-    text-align: center;
-    margin-bottom: 13px;
-}
-#btn-1 {
-    text-align: center;
-    padding: 20px;
-}
-#btn-1 button {
-    border: 2px solid rgb(50, 50, 50);
-    border-radius: 30px;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 18px;
-    margin-right: 10px;
-}
-#btn-1 button:hover{
-    background-color: rgb(50, 50, 50);
-    color: white;
-    cursor: pointer;
-}
-#btn-1 a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    background-color: rgb(50, 50, 50);
-    border: 2px solid rgb(50, 50, 50);
-    border-radius: 30px;
-    padding: 18px;
-}
-#btn-1 a:hover{
-    color: white;
-    background-color: black;
 
+header img {
+   height: 400px;
+   width: 400px;
+   border-radius: 50%;
+   gap: 20px;
 }
-#logo {
-    display: flex;
-    justify-content: center;
-    height: 40px;
-}
-#about-me {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* margin-right: 30px; */
-}
-#about p {
-    text-align: center;
-    color: rgb(81, 81, 81);
-    margin-bottom: 15px;
-}
-#about h1 {
-    text-align: center;
-    font-size: 46px;
-    margin-bottom: 80px;
-}
-#about-me img {
-    height: 450px;
-    width: 350px;
-    border-radius: 40px;
-}
-/* About me Secttion */
-.image {
-    display: flex;
-    margin: 0px 160px;
 
+#profile {
+   text-align: center;
+   line-height: 50px;
 }
-.image img {
-    border-radius: 40px;
-    margin-right: 60px;
+
+#profile p {
+   font-size: 18px;
+   font-weight: bold;
+   color: rgb(81, 81, 81);
 }
+
+#profile h1 {
+   font-size: 50px;
+   font-weight: bold;
+}
+
+#profile h2 {
+   font-size: 30px;
+   color: rgb(100, 100, 100);
+}
+
+#profile button {
+   padding: 20px;
+   border-radius: 30px;
+   font-size: 14px;
+   font-weight: bold;
+   background-color: rgb(100, 100, 100);
+   color: white;
+   border: none;
+   margin-right: 15px;
+}
+
+#profile button:hover {
+   background-color: rgb(40, 40, 40);
+   color: white;
+   cursor: pointer;
+}
+
+#profile a {
+   text-decoration: none;
+   color: white;
+   background-color: rgb(100, 100, 100);
+   font-size: 14px;
+   font-weight: bold;
+   padding: 20px;
+   border-radius: 30px;
+}
+
+#profile a:hover {
+   background-color: rgb(40, 40, 40);
+}
+
+/* About-Me Section */
+#ph1 {
+   text-align: center;
+   line-height: 50px;
+   margin-bottom: 50px;
+}
+
+#ph1 p {
+   color: rgb(81, 81, 81);
+}
+
+#ph1 h1 {
+   font-size: 46px;
+   font-weight: bold;
+}
+
+#me {
+   display: flex;
+   justify-content: center;
+}
+
+#me img {
+   height: 400px;
+   width: 330px;
+   border-radius: 40px;
+   margin-right: 60px;
+}
+
 #exp-edu {
-    display: flex;
-    margin-bottom: 30px;
+   display: flex;
+   gap: 40px;
+   margin-bottom: 20px;
 }
-#exp-edu p {
-    color: rgb(93, 93, 93);
-    font-size: medium;
-    line-height: 25px;
+
+#sub-exp p {
+   max-width: 720px;
+   line-height: 25px;
+   color: rgb(100, 100, 100);
 }
-.exp-edu{
-    color: rgb(93, 93, 93);
-    font-size: medium;
-    line-height: 25px;
+
+#Experience {
+   text-align: center;
+   border: 2px solid grey;
+   border-radius: 30px;
+   padding: 30px;
 }
-.experience {
-    height: 120px;
-    width: 300px;
-    background-color: white;
-    border: 3px solid grey;
-    border-radius: 30px;
-    text-align: center;
-    margin-right: 40px;
-    padding: 20px 40px;
-    line-height: 25px;
+
+#Education {
+   text-align: center;
+   border: 2px solid grey;
+   border-radius: 30px;
+   padding: 20px;
 }
-.education {
-    height: 120px;
-    width: 300px;
-    background-color: white;
-    border: 3px solid grey;
-    border-radius: 30px;
-    text-align: center;
-    padding: 20px 40px;
-    line-height: 25px;
+
+/* Experience/Skill Section */
+#skills {
+   margin-top: 100px;
 }
-/* Experience / Slills */
-#explore{
+
+#front-back {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+}
+
+#front-back dt {
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 32px;
+}
+
+#front-back dd {
+   font-weight: bold;
+   font-size: 18px;
+   color: rgb(100, 100, 100);
+}
+
+#frontend {
+   text-align: center;
+   border: 2px solid grey;
+   padding: 30px;
+   border-radius: 30px;
+}
+
+#front-back h1 {
+   font-size: 40px;
+   color: rgb(81, 81, 81);
+}
+
+#backend {
+   text-align: center;
+   border: 2px solid grey;
+   padding: 30px;
+   border-radius: 30px;
+}
+
+/******* Project Section *******/
+#projects {
+   margin-top: 60px;
+   text-align: justify;
+}
+
+#ScreenShot {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.one {
+   height: 250px;
+   border: 2px solid grey;
+   border-radius: 40px;
+   padding: 30px;
+   background-color: rgb(255, 255, 244);
+   margin-bottom: 10px;
+}
+
+/* Footer section */
+footer {
+   margin-top: 50px;
+}
+
+#mail-git {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid grey;
+   border-radius: 50px;
+   padding: 20px;
+   margin: 0 400px 100px;
+   gap: 50px;
+
+}
+
+#mail {
+   display: flex;
+   align-items: center;
+}
+
+#mail-git img {
+   height: 45px;
+   cursor: pointer;
+}
+
+#git {
+   display: flex;
+   align-items: center;
+}
+
+#mail-git a {
+   text-decoration: none;
+   color: black;
+   font-weight: 500;
+}
+
+#mail-git a:hover {
+   color: grey;
+   font-size: 17px;
+   text-decoration: underline;
+}
+
+#AEPC a {
+   text-decoration: none;
+   color: black;
+   font-size: 26px;
+   margin: 20px; 
+   line-height: 80px;
+}
+#AEPC{
+   text-align: center;
+}
+
+#AEPC a:hover {
+   color: grey;
+   text-decoration: underline;
+}
+
+
+footer p {
+   color: rgb(81, 81, 81);
+   margin: 20px;
+   text-align: center;
+}
+
+@media only screen and (max-width:465px) {
+   nav {
+      display: flex;
+      justify-content: center;
+   }
+
+   nav h1 {
+      font-size: 20px;
+   }
+
+   #anchor a {
+      display: flex;
+      font-size: 16px;
+   }
+
+   /* Header Section */
+   header {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   header img {
+      height: 300px;
+      width: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   #profile {
+      line-height: 35px;
       text-align: center;
-    margin-top: 100px;
-    font-size: 26px;
-}
-#explore h1{
-    text-align: center;
-    font-size: 46px;
-}
-#explore p{
-    color: rgb(93, 93, 93);
-}
-.front-back{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    line-height: 25px;
-}
+   }
 
-.frontend{
-    height: auto;
-    border: 2px solid grey;
-    border-radius: 35px;
-    padding: 40px 70px;
-    margin-right: 30px;
-}
-.front-back h1{
-    margin-bottom: 30px;
-    color: rgb(93, 93, 93);
-}
-.front-back p{
-    margin-bottom: 25px;
-    color: rgb(81, 81, 81);
-    text-align: center;
-}
-.backend{
-    height: auto;
-    border: 2px solid grey;
-    border-radius: 35px;
-    padding: 40px 70px;
-}
+   #profile h1 {
+      font-size: 36px;
+   }
 
-.frontend h3::before{
-    content: "✅";
+   #profile h2 {
+      font-size: 20px;
+   }
+
+   #ph1 {
+      margin: 40px 0 10px;
+      line-height: 35px;
+   }
+
+   #ph1 h1 {
+      font-size: 38px;
+   }
+
+   #me {
+      display: inline-block;
+      text-align: center;
+   }
+
+   #me img {
+      height: 200px;
+      width: 150px;
+      border-radius: 15px;
+      margin-right: 12px;
+   }
+
+   #exp-edu {
+      display: inline-block;
+   }
+
+   #Experience {
+      padding: 20px;
+      margin: 20px 30px;
+      border-radius: 20px;
+   }
+
+   #Education {
+      padding: 20px;
+      margin: 20px 30px;
+      border-radius: 20px;
+   }
+
+   #sub-exp p {
+      text-align: center;
+      margin: 0 10px;
+   }
+
+   #sub-exp #para {
+      text-align: justify;
+   }
+
+   /* Experience/Skill Section */
+   #ph1 h1 {
+      font-size: 30px;
+   }
+
+   #front-back {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 16px 21px;
+   }
+
+   #frontend {
+      padding: 18px 10px;
+      margin: 10px 18px;
+   }
+
+   #backend {
+      padding: 18px 10px;
+      margin: 10px 18px;
+   }
+
+   #front-back h1 {
+      font-size: 20px;
+      color: rgb(81, 81, 81);
+   }
+
+   /******* Project Section *******/
+   .one {
+      height: 100px;
+      border-radius: 30px;
+   }
+
+   /* Footer Section */
+   #mail-git {
+      display: block;
+      margin: 0 20px;
+      border-radius: 20px;
+      padding: 5px;
+   }
+   #AEPC a{
+      display: block;
+      font-size: large;
+      line-height: 30px;
+   }
 }
-.backend h3::before{
-    content: "✅";
-}
- /* Contact-Me */
- .contact{
-    text-align: center;
-    margin-top: 100px;
- }
- .contact h1{
-    font-size: 46px;
- }
- .mail-git{
-    display: flex; 
-    justify-content: center;
-    border: 2px solid rgb(81, 81, 81);
-    border-radius: 35px;
-    padding: 15px;
-    margin: 50px 400px 150px;
- }
- 
- #mail a{
-    text-decoration: none;
-    color: black;
-    font-size: 22px;
- }
- #mail{
-    display: flex;
-    align-items: center;
-    margin-right: 60px;
- }
- #git a{
-    text-decoration: none;
-    color: black;
-    font-size: 22px;
- }
- #git{
-    display: flex;
-    align-items: center;
- }
- /* Footer Section*/
- footer{
-    text-align: center;
-    font-size: 26px;
-    margin: 0px 100px 70px;
- }
- footer a{
-    text-decoration: none;
-    color: black;
-   margin-right: 50px;
- }
- .about:hover{
-    text-decoration:underline;
-    color: grey;
- }
- .exp:hover{
-    text-decoration:underline;
-    color: grey;
- }
- .pro:hover{
-    text-decoration:underline;
-    color: grey;
- }
- .con:hover{
-    text-decoration:underline;
-    color: grey;
- }
- footer .copy{
-    font-size: large;
-    margin-top: 50px;
-    color: rgb(93, 93, 93);
- }
