@@ -26,6 +26,27 @@ nav h1 {
    font-size: 24px;
 }
 
+#anchor a:hover {
+   color: grey;
+   text-decoration: underline;
+
+   animation: change .1000000000000s ease-in;
+}
+
+@keyframes change {
+   0% {
+      color: grey;
+   }
+
+   50% {
+      color: rgb(255, 255, 255);
+   }
+
+   100% {
+      color: grey;
+   }
+}
+
 /* Header Section */
 header {
    display: flex;
@@ -159,20 +180,7 @@ header img {
    gap: 40px;
 }
 
-#front-back dt {
-   font-weight: bold;
-   font-size: 20px;
-   line-height: 32px;
-}
-
-#front-back dd {
-   font-weight: bold;
-   font-size: 18px;
-   color: rgb(100, 100, 100);
-}
-
 #frontend {
-   text-align: center;
    border: 2px solid grey;
    padding: 30px;
    border-radius: 30px;
@@ -181,13 +189,31 @@ header img {
 #front-back h1 {
    font-size: 40px;
    color: rgb(81, 81, 81);
+   margin-bottom: 20px;
 }
 
 #backend {
-   text-align: center;
    border: 2px solid grey;
    padding: 30px;
    border-radius: 30px;
+}
+
+article img {
+   height: 40px;
+   width: auto;
+}
+
+article {
+   display: flex;
+   margin-bottom: 30px;
+}
+
+.icon {
+   margin-right: 20px;
+}
+
+article h3 {
+   color: grey;
 }
 
 /******* Project Section *******/
@@ -260,10 +286,11 @@ footer {
    text-decoration: none;
    color: black;
    font-size: 26px;
-   margin: 20px; 
+   margin: 20px;
    line-height: 80px;
 }
-#AEPC{
+
+#AEPC {
    text-align: center;
 }
 
@@ -302,8 +329,8 @@ footer p {
    }
 
    header img {
-      height: 300px;
-      width: 300px;
+      height: 250px;
+      width: 250px;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -322,6 +349,7 @@ footer p {
       font-size: 20px;
    }
 
+   /* About-Me Section */
    #ph1 {
       margin: 40px 0 10px;
       line-height: 35px;
@@ -408,9 +436,60 @@ footer p {
       border-radius: 20px;
       padding: 5px;
    }
-   #AEPC a{
+
+   #AEPC a {
       display: block;
       font-size: large;
       line-height: 30px;
+   }
+}
+
+/* Design For Tablet */
+@media screen and (max-width:768px) and (min-width:464px) {
+
+   #anchor a {
+      display: block;
+      font-size: 20px;
+   }
+
+   /* Header Section */
+   header {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   /* About-Me Section */
+   #me {
+      flex-direction: column;
+   }
+
+   #me img {
+      height: 300px;
+      width: 250px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   /* Experience/Skill Section */
+   #front-back {
+      flex-direction: column;
+      margin: 20px;
+   }
+
+   #front-back h1 {
+      font-size: 30px;
+   }
+
+   /******* Project Section *******/
+   .one {
+      height: 180px;
+   }
+
+   /* Footer section */
+   #mail-git {
+      margin: 10px;
+      gap: 20px;
    }
 }
